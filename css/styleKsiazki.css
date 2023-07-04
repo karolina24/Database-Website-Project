@@ -1,0 +1,35 @@
+ 
+    .book-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1000px;
+        margin: 50px auto 0;
+        padding: 20px;
+        background-color: #DACCC1;
+        border: 1px solid #88785b;
+        border-radius: 5px;
+      }
+      
+      .book-image {
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      
+      .book-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .book-author {
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+      
+      .book-description {
+        text-align: justify;
+      }

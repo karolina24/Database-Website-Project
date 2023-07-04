@@ -1,0 +1,187 @@
+body{
+  font-family: 'Kotta One', sans-serif;
+  background-image: url('../img/tlo_ksiazki.jpeg');
+  background-color: rgba(255, 255, 255, 0.2); 
+  background-size: 230px;
+}
+h3{
+  margin-top: 40px;
+  font-size: 30px;
+  
+}
+
+.papers {
+
+  color: #383229;
+  display: flex;
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  float: left;
+  position: relative;
+  width: 38%; 
+  padding: 1.5em; 
+  margin: 110px 30px 0px 50px; 
+
+}
+blockquote {
+  color: #383229;
+  font-weight: 100;
+  font-size: 32px; 
+  max-width: 600px;
+  line-height: 1.4;
+  position: relative;
+  margin: 0;
+  padding: 8px; 
+}
+.quoteDaily{
+  color: #383229;
+  font-size: 20px;
+}
+
+cite {
+  color: #383229;
+  font-size: 20px; 
+  line-height: 3;
+  text-align: left;
+}
+.quote-image {
+  
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.papers, .papers:before, .papers:after  {
+  background-color:#e7d9c5;
+border: 1px solid #88785b;
+box-shadow: inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+
+.papers:before, .papers:after  {
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+-webkit-transform: rotateZ(2.5deg);
+-o-transform: rotate(2.5deg);
+transform: rotateZ(2.5deg);
+z-index: -1;
+}
+
+.papers:after  {
+-webkit-transform: rotateZ(-2.5deg);
+-o-transform: rotate(-2.5deg);
+transform: rotateZ(-2.5deg);
+}
+
+.papers h2  {
+font-size: 1.8em;
+font-weight: normal;
+text-align: center;
+padding: 0.2em 0;
+margin: 0;
+border-top: 1px solid #ddd;
+border-bottom: 2px solid #ddd;
+}
+
+.papers p  {
+text-align: left;
+margin: 1,5em 0;
+}
+
+
+.button {
+    align-items: center;
+    background-color:#e7d9c5;
+    border: 1px solid #88785b;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #383229;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .button:hover,
+  .button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: #383229;
+  }
+  
+  .button:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button:active {
+    background-color:#e7d9c5;
+    border: 1px solid #88785b;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: #383229;
+    transform: translateY(0);
+  }
+
+  div.hello  {
+    margin-top: 40px;
+    width: 50%;
+    float: left;
+    background-color:#e7d9c5;
+    border: 1px solid #88785b;
+    border-radius: 10px;
+  }
+  
+  
+  
+
+  
+  @media (max-width: 800px) {
+    .papers {
+      width: 90%; 
+      padding: 10px;
+      margin: 100px 0px 100px 20px; 
+    }
+  
+    .quoteDaily {
+      font-size: 16px;
+    
+    }
+  
+    blockquote {
+      font-size: 20px;
+      margin-bottom:50px;
+    }
+  
+    .button {
+      margin-top: 5px;
+      position: absolute;
+      bottom: 10px;
+      width: 70px;
+      font-size: 13px;
+    }
+    div.hello {
+      width: 100%;
+      float: none;
+    }
+  }
+ 
+  
+

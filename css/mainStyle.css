@@ -1,0 +1,230 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body{
+    font-family: 'Kotta One', sans-serif;
+  background-image: url('../img/tlo_ksiazki.jpeg');
+  background-color: rgba(255, 255, 255, 0.2); 
+  background-size: 230px;
+  }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+   
+
+   /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(30, 19, 1, 0.904);
+    color: #FFEED7;
+   }
+   .nav-links a {
+    color: #FFEED7;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 19px;
+ 
+   }
+   .menu li:hover {
+    background-color: #b59a85;
+    
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+ 
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: rgba(30, 19, 1, 0.904);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #b59a85;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 900px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color: rgba(30, 19, 1, 0.904);
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top:33px;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color: #b59a85;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: rgba(15, 10, 1, 0.904);
+   }
+   }
+
+   .menu li {
+    padding: 5px 14px;
+   }
+/**Signup form**/
+
+   input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Kotta One', sans-serif;
+  background-color: #e4ddd8;
+  border: 1px solid #88785b;
+}
+
+input[type=submit] {
+    
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Kotta One', sans-serif;
+  }
+
+.signup-form-form {
+    
+    margin:auto;
+    width: 60%;
+    border-radius: 10px;
+    background-color:#c4b5a9;
+    padding: 20px;
+}
+button[type=submit] {
+    appearance:none;
+    -webkit-appearance:none;
+    padding:10px;
+    border:none;
+    background-color:#452c02;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+    font-family: 'Kotta One', sans-serif;
+  }
+
+  h2{
+    margin-top:30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+.logout-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logout-btn a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.profile-info p {
+  display: flex;
+  align-items: center;
+}
+
+.profile-info strong {
+  margin-right: 5px;
+}
+
+
+
+
